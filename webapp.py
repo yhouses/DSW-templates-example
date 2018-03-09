@@ -15,4 +15,4 @@ def render_page2():
     return render_template('page2.html')
     
 if __name__=="__main__":
-    app.run(debug=False, port=54321)
+    app.run(debug=False)
