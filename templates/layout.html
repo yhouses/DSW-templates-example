@@ -24,29 +24,7 @@
   
   </head>
   <body>
-     <!--nav bar-->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-      <a class="navbar-brand" href="#">My Website</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li {% if active_page == "home" %} class="nav-item active"{% else %}class="nav-item"{% endif %}>
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li {% if active_page == "page1" %} class="nav-item active"{% else %}class="nav-item"{% endif %}>
-            <a class="nav-link" href="/p1">Page 1</a>
-          </li>
-          <li {% if active_page == "page2" %} class="nav-item active"{% else %}class="nav-item"{% endif %}>
-            <a class="nav-link" href="/p2">Page 2</a>
-          </li>    
-        </ul>
-      </div>  
-    </nav>
-    
-    <!--page content-->
-    {% block content %}{% endblock %}
+     
     
   </body>
 </html>
