@@ -1,16 +1,168 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Working Title</title>
+    <title>Next Listen</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
   </head>
   <body>
-
-    <form action="/action_page.php">
-      <label for="fname">First name:</label><br>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Next Listen</a>
+    </nav>
+    <br>
+    <br>
+    <form action="/p1" align="center">
+    
+    <h4> Fill out the survey to find your next listen </h4> 
+    <br>
+    <br>
+    
+    <div class="myDiv3">
+      <label for="fname"><b>First name:</b></label><br>
       <input type="text" id="fname" name="fname"><br>
-      <label for="lname">Last name:</label><br>
+      <label for="lname"><b>Last name:</b></label><br>
       <input type="text" id="lname" name="lname"><br><br>
+    </div>
+    <br>
+    <br>
+    <div class="myDiv3">
+      <p><b>Choose the type of music you want to listen to:</b></p>
+       <input type="radio" id="underground" name="fav_language" value="underground">
+       <label for="underground">Underground Music</label><br>
+       <input type="radio" id="hits" name="fav_language" value="hits">
+       <label for="hits">Popular/Today's Top Hits</label><br>
+       <input type="radio" id="relevant" name="fav_language" value="relevant">
+       <label for="relevant">Relevancy does not matter</label><br><br>
+    </div>
+    <br>
+    <br>
+    <div class="myDiv">
+    <p><b>Which genre of music would you like to listen to?</b></p>
+       <input type="checkbox" id="vehicle1" name="music1" value="Rock">
+       <label for="music1"> Rock</label><br>
+       <input type="checkbox" id="vehicle2" name="music2" value="Soft Rock">
+       <label for="music2"> Soft Rock</label><br>
+       <input type="checkbox" id="vehicle3" name="music3" value="Psychedelic Music">
+       <label for="music3"> Psychedelic Music</label><br>
+       <input type="checkbox" id="music4" name="music4" value="Country">
+       <label for="music4"> Country</label><br>
+       <input type="checkbox" id="music5" name="music5" value="Blues">
+       <label for="music5"> Blues</label><br>
+       <input type="checkbox" id="music6" name="music6" value="Rap">
+       <label for="music6"> Rap</label><br>
+       <input type="checkbox" id="music7" name="music7" value="R&B">
+       <label for="music7"> R&B </label><br>
+       <input type="checkbox" id="music8" name="music8" value="Latin Pop">
+       <label for="music8"> Latin Pop</label><br>
+       <input type="checkbox" id="music9" name="music9" value="Alternative">
+       <label for="music9"> Alternative</label><br>
+       <input type="checkbox" id="music10" name="music10" value="Indie">
+       <label for="music10"> Indie</label><br>
+       <input type="checkbox" id="music11" name="music11" value="Dance/Electronic">
+       <label for="music11"> Dance/Electronic</label><br>
+       <input type="checkbox" id="music12" name="music12" value="Romance">
+       <label for="music12"> Romance</label><br>
+       <input type="checkbox" id="music13" name="music13" value="Folk & Acoustic">
+       <label for="music12"> Folk & Acoustic</label><br>
+       <input type="checkbox" id="music14" name="music14" value="Soul">
+       <label for="music14"> Soul</label><br>
+    </div>
+    <br>
+    <br>
+    <div class="myDiv4">
+       <label for="director"><b>Enter your favorite music artist:</b></label>
+       <input type="artist" id="artist" name="artist">  
+    </div>    
+    <br>
+    <br>
+    <div class="myDiv4">
+    <p><b>Do you enjoy older music or more modern music?</b><p>
+        <input type="button" value="Older Music">
+        <input type="button" value="Modern Music">
+        <input type="button" value="I enjoy both">
+    </div>
+    <br>
+    <br>
+    <div class="myDiv">    
+    <p><b>How are you feeling?</b></p>
+       <input type="checkbox" id="emotion1" name="emotion1" value="Happy">
+       <label for="emotion1"> Happy/Feeling Good</label><br><br>
+       
+       <input type="checkbox" id="emotion2" name="emotion2" value="Need a Good Cry">
+       <label for="emotion2"> Good Cry</label><br><br>
+       
+       <input type="checkbox" id="emotion3" name="emotion3" value="Angry">
+       <label for="emotion3"> Angry</label><br><br>
+       
+       <input type="checkbox" id="emotion4" name="emotion4" value="Nostalgic">
+       <label for="emotion4"> Nostalgic</label><br><br>
+       
+       <input type="checkbox" id="emotion5" name="emotion5" value="Energetic">
+       <label for="emotion5"> Energetic</label><br><br>
+       
+       <input type="checkbox" id="emotion6" name="emotion6" value="Relaxed">
+       <label for="emotion6"> Relaxed</label><br><br>
+       
+       <input type="checkbox" id="emotion7" name="emotion7" value="Lonely">
+       <label for="emotion7"> Lonely</label><br><br>
+       
+       <input type="checkbox" id="emotion8" name="emotion8" value="Bored">
+       <label for="emotion8"> Bored</label><br><br>
+       </div>
+      <br>
+      <br>
+    <div class="myDiv">  
+    <p><b>Which type of music do you not want to listen to?</b></p>
+     
+      <input type="checkbox" id="choice1" name="choice1" value="Jazz">
+       <label for="emotion1"> Jazz</label><br><br>
+       
+       <input type="checkbox" id="choice2" name="choice2" value="Pop">
+       <label for="emotion2"> Pop</label><br><br>
+       
+       <input type="checkbox" id="choice3" name="choice3" value="Blues">
+       <label for="emotion3"> Blues</label><br><br>
+       
+       <input type="checkbox" id="choice4" name="choice4" value="Country">
+       <label for="emotion4"> Country</label><br><br>
+       
+       <input type="checkbox" id="choice5" name="choice5" value="Folk">
+       <label for="emotion5"> Folk</label><br><br>
+       
+       <input type="checkbox" id="choice6" name="choice6" value="Electric pop">
+       <label for="emotion6"> Electric pop</label><br><br>
+       
+       <input type="checkbox" id="choice7" name="choice7" value="Rap">
+       <label for="emotion7"> Rap</label><br><br>
+       
+       <input type="checkbox" id="choice8" name="choice8" value="Rock">
+       <label for="emotion8"> Rock</label><br><br>
+    </div>
+      <br>
+      <br>
+      <br>
       <input type="submit" value="Submit">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </form>
 
   </body>

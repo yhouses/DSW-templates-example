@@ -1,3 +1,49 @@
-#content {
-     margin-left: 20px;
+.myDiv {
+  border-radius: 85px;
+  border: 2px solid #7704E7;
+  padding: 20px; 
+  width: 430px;
+  height: 540px;
+  align-content: center;
+ 
+}
+
+.myDiv2{
+    border-radius: 85px;
+    border: 2px solid #7704E7;
+    padding: 20px;
+    width: 430px;
+    height: 300px;
+    align-content: center;
+    align-self: center;
+}
+
+.myDiv3{
+    border-radius: 85px;
+    border: 2px solid #7704E7;
+    padding: 20px;
+    width: 430px;
+    height: 200px;
+    align-content: center;
+    align-self: center;
+}
+
+.myDiv4{
+    align-self: center;
+    border-radius: 95px;
+    border: 2px solid #7704E7;
+    padding: 20px;
+    width: 430px;
+    height: 150px;
+    align-content: center;
+}
+
+body{
+    background-color: #282B32;
+    color: white;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
 }

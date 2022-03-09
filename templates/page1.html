@@ -1,10 +1,25 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-{% set active_page = "page1" %}
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-{% block title %}Page 1{% endblock %}
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-{% block content %}
-    <!--page content-->
-    <h1>Page 1</h1>
-{% endblock %}
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
+        <title>Response</title>
+    </head>
+    <body>
+        <h1>Response:</h1>
+        <p>{{ response1 }}</p>
+        <p>{{ response2 }}</p>
+    </body>
+</html>
