@@ -1,41 +1,31 @@
 .myDiv {
-  border-radius: 85px;
-  border: 2px solid #FF96D9;
-  padding: 20px; 
-  width: 430px;
   height: 540px;
-  align-content: center;
- 
 }
 
 .myDiv2{
-    border-radius: 85px;
-    border: 2px solid #FF96D9;
-    padding: 20px;
-    width: 430px;
     height: 300px;
-    align-content: center;
-    align-self: center;
 }
 
 .myDiv3{
-    border-radius: 85px;
-    border: 2px solid #FF96D9;
-    padding: 20px;
-    width: 430px;
     height: 200px;
-    align-content: center;
-    align-self: center;
 }
 
 .myDiv4{
-    align-self: center;
+    height: 150px;
+}
+
+.myDiv5{
+    height: 320px;
+}
+
+.block{
+    align-self:center;
     border-radius: 95px;
     border: 2px solid #FF96D9;
     padding: 20px;
     width: 430px;
-    height: 150px;
-    align-content: center;
+    align-content:center;
+    margin: auto;
 }
 
 body{

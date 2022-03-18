@@ -1,18 +1,39 @@
-from flask import Flask, url_for, render_template
+from flask import Flask, url_for, render_template, request
 
-app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  Otherwise, it is the name of the file (ex. webapp)
+app = Flask(__name__)
 
 @app.route("/")
 def render_main():
-    return render_template('home.html')
+   return render_template('home.html')
 
-@app.route("/p1")
-def render_page1():
-    return render_template('page1.html')
+@app.route("/response")
+def render_response():
+    choose = request.args['fav_language']
+    if choose == 'Underground Music':
+        reply1 = "Underground Music"
+    elif choose == 'Todays Top Hits':
+        reply1 = "Today's Top Hits"
+    else:
+        reply1 = "Relevancy does not matter"
+        
 
-@app.route("/p2")
-def render_page2():
-    return render_template('page2.html')
+    choose = request.args.getlist("music1")
+    if 'Rock' in choose:
+        reply2 = "Black Sabbath, The Kinks, Jimi Hendrix"
+    if 'Psychedelic Music' in choose:
+        reply2 += "Still Woozy, MGMT, Tame Impala, Glass Animals"
+    if 'Rap' in choose:
+        reply2 += "Kanye West, J. Cole, Kendrick Lamar, Baby Keem"
+    if 'R&B' in choose:
+        reply2 += "Solange, Frank Ocean, SZA, Rejjie Snow, Childish Gambino"
+    if 'Alternative' in choose:
+        reply2 += "Grimes, Alt-J, Joji, Phoebe Bridgers"
+    if 'Folk & Acoustic' in choose:
+        reply2 += "Flyte, The Lummineers, Half Moon Run"
+        
+    choose = request.args[
+        
+    return render_template('page1.html', response1 = reply1, response2=reply2)
     
 if __name__=="__main__":
-    app.run(debug=False)
+    app.run(debug=True)
