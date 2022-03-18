@@ -31,7 +31,6 @@ def render_response():
     if 'Folk & Acoustic' in choose:
         reply2 += "Flyte, The Lummineers, Half Moon Run"
         
-    choose = request.args[
         
     return render_template('page1.html', response1 = reply1, response2=reply2)
     
