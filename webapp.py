@@ -16,7 +16,7 @@ def render_response():
     else:
         reply1 = "Relevancy does not matter"
         
-
+    reply2 = ""
     choose = request.args.getlist("music1")
     if 'Rock' in choose:
         reply2 = "Black Sabbath, The Kinks, Jimi Hendrix"
